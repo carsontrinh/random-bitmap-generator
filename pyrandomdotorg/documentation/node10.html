@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>SequenceGenerator</TITLE>
+<META NAME="description" CONTENT="SequenceGenerator">
+<META NAME="keywords" CONTENT="documentation">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="documentation.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node7.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html165"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/sw/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html161"
+  HREF="node7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/sw/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html155"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/sw/share/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html163"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/sw/share/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html166"
+  HREF="node11.html">StringGenerator</A>
+<B> Up:</B> <A NAME="tex2html162"
+  HREF="node7.html">Methods</A>
+<B> Previous:</B> <A NAME="tex2html156"
+  HREF="node9.html">IntegerGenerator</A>
+ &nbsp; <B>  <A NAME="tex2html164"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00333000000000000000">
+SequenceGenerator</A>
+</H2>
+
+<P>
+<B>SequenceGenerator(nmin,nmax,rnd="new")</B>
+<BR>
+<BR>
+This method returns a randomized sequence of numbers based on a particular interval. The method returns 
+the list of numbers as a python list.
+<BR>
+<BR>  <TABLE CELLPADDING=3 BORDER="1">
+<TR><TH ALIGN="LEFT"><B>Argument:</B></TH>
+<TH ALIGN="LEFT"><B>Type:</B></TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=283><B>Information:</B></TH>
+</TR>
+<TR><TD ALIGN="LEFT">nmin</TD>
+<TD ALIGN="LEFT">Int</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>The lower bound of the interval (inclusive).</TD>
+</TR>
+<TR><TD ALIGN="LEFT">nmax</TD>
+<TD ALIGN="LEFT">Int</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>The upper bound of the interval (inclusive).</TD>
+</TR>
+<TR><TD ALIGN="LEFT">rnd</TD>
+<TD ALIGN="LEFT">String</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>Determines the randomization to use to generate the strings. If new is specified, then a new randomization will created from the truly random bitstream at RANDOM.ORG. This is probably what you want in most cases. If id.identifier is specified, the identifier is used to determine the randomization in a deterministic fashion from a large pool of pregenerated random bits. Because the numbers are produced in a deterministic fashion, specifying an id basically uses RANDOM.ORG as a pseudo-random number generator. The third (date.iso-date) form is similar to the second; it allows the randomization to be based on one of the daily pregenerated files. This form must refer to one of the dates for which files exist, so it must be a day in the past. The date must be in ISO 8601  format (i.e., YYYY-MM-DD).</TD>
+</TR>
+</TABLE>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html165"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/sw/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html161"
+  HREF="node7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/sw/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html155"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/sw/share/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html163"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/sw/share/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html166"
+  HREF="node11.html">StringGenerator</A>
+<B> Up:</B> <A NAME="tex2html162"
+  HREF="node7.html">Methods</A>
+<B> Previous:</B> <A NAME="tex2html156"
+  HREF="node9.html">IntegerGenerator</A>
+ &nbsp; <B>  <A NAME="tex2html164"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sean Brewer
+2008-05-27
+</ADDRESS>
+</BODY>
+</HTML>

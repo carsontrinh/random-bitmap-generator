@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>StringGenerator</TITLE>
+<META NAME="description" CONTENT="StringGenerator">
+<META NAME="keywords" CONTENT="documentation">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="documentation.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node7.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html177"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/sw/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html173"
+  HREF="node7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/sw/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html167"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/sw/share/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html175"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/sw/share/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html178"
+  HREF="node12.html">RandomString</A>
+<B> Up:</B> <A NAME="tex2html174"
+  HREF="node7.html">Methods</A>
+<B> Previous:</B> <A NAME="tex2html168"
+  HREF="node10.html">SequenceGenerator</A>
+ &nbsp; <B>  <A NAME="tex2html176"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00334000000000000000">
+StringGenerator</A>
+</H2>
+
+<P>
+<B>StringGenerator(num,len,digits=True,upperalpha=True,</B>
+<BR><B>loweralpha=True,unique=True,rnd="new")</B>
+<BR>
+<BR>
+This method gets a list of random strings from Random.org and returns them as a python list.
+<BR>
+<BR>   <TABLE CELLPADDING=3 BORDER="1">
+<TR><TH ALIGN="LEFT"><B>Argument:</B></TH>
+<TH ALIGN="LEFT"><B>Type:</B></TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=283><B>Information:</B></TH>
+</TR>
+<TR><TD ALIGN="LEFT">num</TD>
+<TD ALIGN="LEFT">Int</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>The number of strings that you want.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">len</TD>
+<TD ALIGN="LEFT">Int</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>The length of the strings. All the strings produced will have the same length. The maximum number is 20 and the minimum is 1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">digits</TD>
+<TD ALIGN="LEFT">Boolean</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>Determines whether digits (0-9) are allowed to occur in the strings.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">upperalpha</TD>
+<TD ALIGN="LEFT">Boolean</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>Determines whether uppercase alphabetic characters (A-Z) are allowed to occur in the strings.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">loweralpha</TD>
+<TD ALIGN="LEFT">Boolean</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>Determines whether lowercase alphabetic characters (a-z) are allowed to occur in the strings.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">unique</TD>
+<TD ALIGN="LEFT">Boolean</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>Determines whether the strings picked should be unique (as a series of raffle tickets drawn from a hat) or not (as a series of die rolls). If unique is set to on, then there is the additional constraint that the number of strings requested (num) must be less than or equal to the number of strings that exist with the selected length and characters.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">rnd</TD>
+<TD ALIGN="LEFT">String</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=283>Determines the randomization to use to generate the strings. If new is specified, then a new randomization will created from the truly random bitstream at RANDOM.ORG. This is probably what you want in most cases. If id.identifier is specified, the identifier is used to determine the randomization in a deterministic fashion from a large pool of pregenerated random bits. Because the numbers are produced in a deterministic fashion, specifying an id basically uses RANDOM.ORG as a pseudo-random number generator. The third (date.iso-date) form is similar to the second; it allows the randomization to be based on one of the daily pregenerated files. This form must refer to one of the dates for which files exist, so it must be a day in the past. The date must be in ISO 8601  format (i.e., YYYY-MM-DD).</TD>
+</TR>
+</TABLE>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html177"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/sw/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html173"
+  HREF="node7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/sw/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html167"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/sw/share/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html175"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/sw/share/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html178"
+  HREF="node12.html">RandomString</A>
+<B> Up:</B> <A NAME="tex2html174"
+  HREF="node7.html">Methods</A>
+<B> Previous:</B> <A NAME="tex2html168"
+  HREF="node10.html">SequenceGenerator</A>
+ &nbsp; <B>  <A NAME="tex2html176"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sean Brewer
+2008-05-27
+</ADDRESS>
+</BODY>
+</HTML>

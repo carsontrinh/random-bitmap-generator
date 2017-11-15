@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Examples</TITLE>
+<META NAME="description" CONTENT="Examples">
+<META NAME="keywords" CONTENT="documentation">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="documentation.css">
+
+<LINK REL="next" HREF="node15.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="documentation.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html211"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/sw/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html207"
+  HREF="documentation.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/sw/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html201"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/sw/share/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html209"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/sw/share/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html212"
+  HREF="node15.html">Conclusion/License</A>
+<B> Up:</B> <A NAME="tex2html208"
+  HREF="documentation.html">pyRandomdotOrg - A Python</A>
+<B> Previous:</B> <A NAME="tex2html202"
+  HREF="node13.html">QuotaChecker</A>
+ &nbsp; <B>  <A NAME="tex2html210"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00400000000000000000">
+Examples</A>
+</H1>
+
+<P>
+pyRandomdotOrg is very straightforward to use. Here are some examples
+as executed from the Python REPL.
+<BR>
+<BR>
+<IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> import pyRandomdotOrg
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> rnd = pyRandomdotOrg.clientlib("An Example Client","sbrewer@students.berry.edu")
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> print rnd.IntegerGeneratorList(5,1,1000000)
+<BR><!-- MATH
+ $[317176, 795730, 842222, 790934, 876738]$
+ -->
+<IMG
+ WIDTH="329" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$[317176, 795730, 842222, 790934, 876738]$">
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> print rnd.IntegerGenerator(1,1000000)
+<BR>
+237629
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> print rnd.SequenceGenerator(1,52)
+<BR><!-- MATH
+ $[36, 46, 48, 1, 45, 50, 19, 32, 8, 28, 31, 23, 37, 2, 14, 11, 35, 49, 52, 7, 12, 40, 4, 42, 22,\\18, 6, 43, 10, 34, 27, 13, 25, 5, 20, 33, 44, 39, 21, 30, 16, 24, 17, 9, 41, 38, 15, 47, 29, 26, 51, 3]$
+ -->
+<IMG
+ WIDTH="1326" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$[36, 46, 48, 1, 45, 50, 19, 32, 8, 28, 31, 23, 37, 2, 14, 11, 35, 49, 52, 7, 12...
+...3, 25, 5, 20, 33, 44, 39, 21, 30, 16, 24, 17, 9, 41, 38, 15, 47, 29, 26, 51, 3]$">
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> print rnd.StringGenerator(5,20)
+<BR><IMG
+ WIDTH="10" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$[$">'2BASj44Ugk2douNKGEON', 'YyUOSZqXcQK5hqrZdtxW',
+<BR>'TPNiOeMrZbMR6g7u1cEQ', 'iRedoDw0h09kpThYVslB', 'INuUq2qMwPgbgUAqujzl'<IMG
+ WIDTH="10" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$]$">
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> print rnd.RandomString(5)
+<BR>
+cdcuF
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> print rnd.QuotaChecker()
+<BR>
+996902
+<BR><IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&gt;&gt;&gt;$"> print rnd.QuotaChecker("6.20.28.79")
+<BR>
+1000000
+<BR>
+<BR><HR>
+<ADDRESS>
+Sean Brewer
+2008-05-27
+</ADDRESS>
+</BODY>
+</HTML>
