@@ -11,7 +11,7 @@ img = Image.new('RGB', (SIZE_ROW, SIZE_COLUMN), "white")  # Create a new white i
 pixels = img.load()  # Create the pixel map
 
 # Iterate through the pixels
-for i in range(img.size[0]):
+for i in xrange(img.size[0]):
 	
 	"""
 	Generate a column of RGB values. Originally, I wanted to request all of the values at the very
@@ -21,7 +21,7 @@ for i in range(img.size[0]):
 
 	rgb_values = random.IntegerGeneratorList(SIZE_COLUMN * 3, 0, 255)
 	
-	for j in range(img.size[1]):
+	for j in xrange(img.size[1]):
 		# Set the colors accordingly
 		pixels[i,j] = (rgb_values[j * 3],\
                        rgb_values[j * 3 + 1],\
